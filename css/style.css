@@ -1,0 +1,93 @@
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  font: 12pt arial, verdana, sans-serif;
+}
+
+h1 {
+  background: #333;
+  color: white;
+  font-size: 2em;
+  border-bottom: 1px solid black;
+  height: 50px;
+}
+
+h1 span {
+  color: red;
+  font-size: 1.25em;
+}
+
+h1 #img {
+  background-image: url(https://dl-web.dropbox.com/get/disco2.png?_subject_uid=250408749&w=AADB4uieBMfbMEc4W3hJeNWXhgQmfZYkYhRgb5EaLhnfug);
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  display: inline-block;
+}
+
+#sidebar {
+  background: #333;
+  width: 200px;
+  transition-property: transform;
+  transition-duration: 200ms;
+  position: absolute;
+}
+
+#sidebar ul {
+  list-style-type: none;
+}
+
+#sidebar li {}
+
+#sidebar a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  border-bottom: 1px solid #777
+}
+
+#sidebar a:hover {
+  background: #444;
+}
+
+.chiuso {
+  transform: translate(-200px);
+}
+
+#footer {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  background-color: #333;
+  border-top: 1px solid black;
+}
+
+#footer ul {
+  list-style-type: none;
+}
+
+#footer li {
+  width: 50%;
+  float: left;
+  color: white;
+}
+
+#content1,#content2,
+#content3 {
+  display: none;
+  width:90%;
+  margin:5%;
+}

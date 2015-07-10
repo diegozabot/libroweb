@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>cap3</title></head><body><h2>3. Struttura base di una pagina</h2>Il primo insieme di elementi che esaminiamo è quello di struttura o scheletro dell&#8217;HTML. <br>Il documento HTML è formato da due parti: head (testa) e body (corpo). <br>Nell&#8217;head
+vanno inserite tutte le informazioni del documento: il titolo del
+documento, eventuali fogli di stile collegati (vedremo in seguito),
+procedure javascript, mappa di caratteri usata nel documento, ecc. <br>Nel body viene inserito il contenuto della pagina vero e proprio. Gli elementi di struttura hanno un ordine fisso.<br>Tabella 3.1 - Elementi di struttura HTML<br><table style="width: 381px; height: 256px;" border="1" cellpadding="2" cellspacing="2">
+<tbody><tr><td>Elemento</td><td>    Significato</td></tr>
+
+<tr><td>&lt;html&gt;<br>&lt;/html&gt;</td><td>    Documento html</td></tr>
+
+<tr><td>&lt;head&gt;<br>&lt;/head&gt;</td><td>    Intestazione</td></tr>
+
+<tr><td>&lt;title&gt;<br>&lt;/title&gt;</td><td>    Titolo del documento</td></tr>
+
+<tr><td>&lt;body&gt;<br>&lt;/body&gt;</td><td>    Corpo della pagina</td></tr>
+</tbody></table><br><br>Esempio 3.1 &#8211; Struttura di una pagina HTML<br><pre>1.&nbsp;&nbsp; &nbsp;&lt;html&gt;</pre><pre>2.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;head&gt;</pre><pre>3.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;title&gt;Prima pagina&lt;/title&gt;</pre><pre>4.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&#8230;</pre><pre>5.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/head&gt;</pre><pre>6.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;body&gt;</pre><pre>7.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Questa è una pagina HTML!</pre><pre>8.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/body&gt;</pre><pre>9.&nbsp;&nbsp; &nbsp;&lt;/html&gt;</pre><br><br>&nbsp;<br>Il
+title non rappresenta un titolo all&#8217;interno della pagina, ma il titolo
+del documento, che verrà visualizzato dal browser sulla barra del
+titolo o sulla linguetta relativa alla pagina. Questo elemento viene
+anche utilizzato dal browser quando si decide di impostare un
+segnalibro. In automatico il nome del segnalibro verrà impostato con il
+title del documento.<br>Nell&#8217;esercizio precedente possiamo notare che
+la e accentata viene tradotta con simboli strani. Questo perché non è
+stata definita una mappa caratteri per il documento. All&#8217;interno
+dell&#8217;elemento head definiamo la seguente riga:<br>&lt;meta charset="UTF-8"&gt;<br>L&#8217;elemento
+meta definisce una particolare informazione diretta al browser. Charset
+è un parametro che specifica la mappa di caratteri da utilizzare, in
+questo caso una codifica di caratteri Unicode.<br>L&#8217;elemento meta può
+definire altri tipi di informazioni, con qualche variazione nella
+sintassi. Nella tabella 3.2 vediamo alcuni esempi.<br>Tabella 3.2 &#8211; Alcuni parametri dell&#8217;elemento meta<br>Parametro&nbsp;&nbsp; &nbsp;Significato&nbsp;&nbsp; &nbsp;Esempio<br>charset&nbsp;&nbsp; &nbsp;Mappa caratteri&nbsp;&nbsp; &nbsp;&lt;meta charset="UTF-8"&gt;<br>author&nbsp;&nbsp; &nbsp;Autore del documento&nbsp;&nbsp; &nbsp;&lt;meta name="author" content="Mario Rossi"&gt;<br>description&nbsp;&nbsp; &nbsp;Descrizione&nbsp;&nbsp; &nbsp;&lt; meta name="description" content="Home page del sito"&gt;<br>keywords&nbsp;&nbsp; &nbsp;Parole chiave&nbsp;&nbsp; &nbsp;&lt;meta name="keywords" content="corso, html, css"&gt;<br><br>Manca
+ancora una cosa importante: la definizione della versione di HTML che
+viene utilizzato. Questo si imposta nella prima riga del documento in
+questo modo:<br>&lt;!DOCTYPE html&gt;<br>Questa è una definizione
+semplificata dall&#8217;HTML 5 che indica, appunto, che il documento è
+scritto utilizzando criteri dell&#8217;HTML 5.<br>La struttura base di un documento HTML, quindi, appare come segue.<br>Esempio 3.2 &#8211; Struttura con doctype e charset<br>1.&nbsp;&nbsp; &nbsp;&lt;!DOCTYPE html&gt;<br>2.&nbsp;&nbsp; &nbsp;&lt;html&gt;<br>3.&nbsp;&nbsp; &nbsp;&lt;head&gt;<br>4.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;title&gt;Nome della pagina&lt;/title&gt;<br>5.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;meta charset="UTF-8"&gt;<br>6.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&#8230;<br>7.&nbsp;&nbsp; &nbsp;&lt;/head&gt;<br>8.&nbsp;&nbsp; &nbsp;&lt;body&gt;<br>9.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Questa è una pagina HTML!<br>10.&nbsp;&nbsp; &nbsp;&lt;/body&gt;<br>11.&nbsp;&nbsp; &nbsp;&lt;/html&gt;<br><br>&nbsp;</body></html>
